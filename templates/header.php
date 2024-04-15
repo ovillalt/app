@@ -1,5 +1,12 @@
+
+
 <?php
-$url_base="http://localhost/app/";
+if($_SERVER["HTTP_HOST"]=="localhost") {
+    $url="http://".$_SERVER["HTTP_HOST"]."/app/";
+}else {
+    $url=$_SERVER["HTTP_HOST"]."/";
+}
+//$url_base="http://localhost/app/";
 ?>
 
 <!doctype html>

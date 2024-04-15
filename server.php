@@ -18,4 +18,13 @@ else
 
 print_r($_SERVER);
 $ip=$_SERVER["HTTP_HOST"];
+
 echo $ip;
+
+if($_SERVER["HTTP_HOST"]=="localhost") {
+    $url="http://".$_SERVER["HTTP_HOST"]."/app/";
+}else {
+    $url=$_SERVER["HTTP_HOST"]."/";
+}
+
+echo "La URL es: ".$url;

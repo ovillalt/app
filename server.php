@@ -1,6 +1,6 @@
 <?php
 
-if($_SERVER["SERVER_NAME"] == "localhost")
+/*if($_SERVER["SERVER_NAME"] == "localhost")
 {
     $path = (strtoupper(substr(PHP_OS, 0, 3)) === "WIN") ? "\\" : "/";
     $replace = explode($path, dirname(__file__));
@@ -19,7 +19,7 @@ else
 print_r($_SERVER);
 $ip=$_SERVER["HTTP_HOST"];
 
-echo $ip;
+echo $ip;*/
 
 if($_SERVER["HTTP_HOST"]=="localhost") {
     $url="http://".$_SERVER["HTTP_HOST"]."/app/";

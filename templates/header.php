@@ -1,12 +1,7 @@
 
 
 <?php
-if($_SERVER["HTTP_HOST"]=="localhost") {
-    $url="http://".$_SERVER["HTTP_HOST"]."/app/";
-}else {
-    $url=$_SERVER["HTTP_HOST"]."/";
-}
-//$url_base="http://localhost/app/";
+$url_base="http://localhost/app/";
 ?>
 
 <!doctype html>
@@ -30,7 +25,7 @@ if($_SERVER["HTTP_HOST"]=="localhost") {
     <nav class="navbar navbar-expand navbar-light bg-light">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">Sistema <span
+                    <a class="nav-link active" href="<?php echo $url_base; ?>" aria-current="page">Sistema <span
                             class="visually-hidden">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -48,3 +43,4 @@ if($_SERVER["HTTP_HOST"]=="localhost") {
             </ul>
         </nav>
     <main class="container">
+<br/>

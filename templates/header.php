@@ -1,10 +1,8 @@
-
-
 <?php
 if($_SERVER["HTTP_HOST"]=="localhost") {
     $url="http://".$_SERVER["HTTP_HOST"]."/app/";
 }else {
-    $url=$_SERVER["HTTP_HOST"]."/";
+    $url="https://".$_SERVER["HTTP_HOST"]."/";
 }
 echo "La URL es: ".$url;
 $url_base=$url;
